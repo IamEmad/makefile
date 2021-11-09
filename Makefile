@@ -42,3 +42,20 @@ SRCSB =	ft_lstnew.c \
 		ft_lstdelone.c \
 		ft_lstiter.c \
 		ft_lstmap.c \
+
+NAME = libft.a
+
+CC = CC
+
+CC_FLAGS = -Wall -Wextra -Werror
+
+
+all: $(NAME)
+
+clean:
+	rm -rf $(OBJS_DIR)
+
+fclean: clean
+	rm -f $(NAME)
+
+re: fclean all
